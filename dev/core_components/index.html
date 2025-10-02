@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://nn.sleap.ai/dev/">
+        <link rel="canonical" href="https://nn.sleap.ai/dev/core_components/">
       
       
+        <link rel="prev" href="../step_by_step_tutorial/">
       
-        <link rel="next" href="installation/">
+      
+        <link rel="next" href="../models/">
       
       
-      <link rel="icon" href="assets/favicon.ico">
+      <link rel="icon" href="../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>sleap-nn documentation</title>
+        <title>Core Components - sleap-nn documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sleap-nn" class="md-skip">
+        <a href="#data-pipeline" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="sleap-nn documentation" class="md-header__button md-logo" aria-label="sleap-nn documentation" data-md-component="logo">
+    <a href=".." title="sleap-nn documentation" class="md-header__button md-logo" aria-label="sleap-nn documentation" data-md-component="logo">
       
-  <img src="assets/sleap-logo.png" alt="logo">
+  <img src="../assets/sleap-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Core Components
             
           </span>
         </div>
@@ -231,9 +233,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="sleap-nn documentation" class="md-nav__button md-logo" aria-label="sleap-nn documentation" data-md-component="logo">
+    <a href=".." title="sleap-nn documentation" class="md-nav__button md-logo" aria-label="sleap-nn documentation" data-md-component="logo">
       
-  <img src="assets/sleap-logo.png" alt="logo">
+  <img src="../assets/sleap-logo.png" alt="logo">
 
     </a>
     sleap-nn documentation
@@ -257,32 +259,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -293,104 +273,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-set-up-your-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 1 : Set Up Your Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-train-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 2 : Train a Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-run-inference-on-the-trained-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 3 : Run Inference on the Trained Model
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Documentation Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get Help
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -402,7 +284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -467,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="config/" class="md-nav__link">
+      <a href="../config/" class="md-nav__link">
         
   
   
@@ -490,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="training/" class="md-nav__link">
+      <a href="../training/" class="md-nav__link">
         
   
   
@@ -513,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="inference/" class="md-nav__link">
+      <a href="../inference/" class="md-nav__link">
         
   
   
@@ -586,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_notebooks/" class="md-nav__link">
+      <a href="../example_notebooks/" class="md-nav__link">
         
   
   
@@ -609,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="step_by_step_tutorial/" class="md-nav__link">
+      <a href="../step_by_step_tutorial/" class="md-nav__link">
         
   
   
@@ -636,8 +518,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -648,11 +532,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -668,7 +552,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Additional Resources
@@ -679,10 +563,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="core_components/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core Components
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -693,6 +597,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Engine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inference-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inference Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking System
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -705,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="models/" class="md-nav__link">
+      <a href="../models/" class="md-nav__link">
         
   
   
@@ -782,7 +749,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/" class="md-nav__link ">
+            <a href="../api/" class="md-nav__link ">
               
   
   
@@ -829,7 +796,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/architectures/" class="md-nav__link ">
+            <a href="../api/architectures/" class="md-nav__link ">
               
   
   
@@ -862,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/common/" class="md-nav__link">
+      <a href="../api/architectures/common/" class="md-nav__link">
         
   
   
@@ -885,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/convnext/" class="md-nav__link">
+      <a href="../api/architectures/convnext/" class="md-nav__link">
         
   
   
@@ -908,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/encoder_decoder/" class="md-nav__link">
+      <a href="../api/architectures/encoder_decoder/" class="md-nav__link">
         
   
   
@@ -931,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/heads/" class="md-nav__link">
+      <a href="../api/architectures/heads/" class="md-nav__link">
         
   
   
@@ -954,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/model/" class="md-nav__link">
+      <a href="../api/architectures/model/" class="md-nav__link">
         
   
   
@@ -977,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/swint/" class="md-nav__link">
+      <a href="../api/architectures/swint/" class="md-nav__link">
         
   
   
@@ -1000,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/unet/" class="md-nav__link">
+      <a href="../api/architectures/unet/" class="md-nav__link">
         
   
   
@@ -1023,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/architectures/utils/" class="md-nav__link">
+      <a href="../api/architectures/utils/" class="md-nav__link">
         
   
   
@@ -1054,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/cli/" class="md-nav__link">
+      <a href="../api/cli/" class="md-nav__link">
         
   
   
@@ -1091,7 +1058,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/config/" class="md-nav__link ">
+            <a href="../api/config/" class="md-nav__link ">
               
   
   
@@ -1124,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/data_config/" class="md-nav__link">
+      <a href="../api/config/data_config/" class="md-nav__link">
         
   
   
@@ -1147,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/get_config/" class="md-nav__link">
+      <a href="../api/config/get_config/" class="md-nav__link">
         
   
   
@@ -1170,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/model_config/" class="md-nav__link">
+      <a href="../api/config/model_config/" class="md-nav__link">
         
   
   
@@ -1193,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/trainer_config/" class="md-nav__link">
+      <a href="../api/config/trainer_config/" class="md-nav__link">
         
   
   
@@ -1216,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/training_job_config/" class="md-nav__link">
+      <a href="../api/config/training_job_config/" class="md-nav__link">
         
   
   
@@ -1239,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/config/utils/" class="md-nav__link">
+      <a href="../api/config/utils/" class="md-nav__link">
         
   
   
@@ -1284,7 +1251,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/data/" class="md-nav__link ">
+            <a href="../api/data/" class="md-nav__link ">
               
   
   
@@ -1317,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/augmentation/" class="md-nav__link">
+      <a href="../api/data/augmentation/" class="md-nav__link">
         
   
   
@@ -1340,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/confidence_maps/" class="md-nav__link">
+      <a href="../api/data/confidence_maps/" class="md-nav__link">
         
   
   
@@ -1363,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/custom_datasets/" class="md-nav__link">
+      <a href="../api/data/custom_datasets/" class="md-nav__link">
         
   
   
@@ -1386,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/edge_maps/" class="md-nav__link">
+      <a href="../api/data/edge_maps/" class="md-nav__link">
         
   
   
@@ -1409,7 +1376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/identity/" class="md-nav__link">
+      <a href="../api/data/identity/" class="md-nav__link">
         
   
   
@@ -1432,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/instance_centroids/" class="md-nav__link">
+      <a href="../api/data/instance_centroids/" class="md-nav__link">
         
   
   
@@ -1455,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/instance_cropping/" class="md-nav__link">
+      <a href="../api/data/instance_cropping/" class="md-nav__link">
         
   
   
@@ -1478,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/normalization/" class="md-nav__link">
+      <a href="../api/data/normalization/" class="md-nav__link">
         
   
   
@@ -1501,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/providers/" class="md-nav__link">
+      <a href="../api/data/providers/" class="md-nav__link">
         
   
   
@@ -1524,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/resizing/" class="md-nav__link">
+      <a href="../api/data/resizing/" class="md-nav__link">
         
   
   
@@ -1547,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/data/utils/" class="md-nav__link">
+      <a href="../api/data/utils/" class="md-nav__link">
         
   
   
@@ -1578,7 +1545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/evaluation/" class="md-nav__link">
+      <a href="../api/evaluation/" class="md-nav__link">
         
   
   
@@ -1615,7 +1582,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/inference/" class="md-nav__link ">
+            <a href="../api/inference/" class="md-nav__link ">
               
   
   
@@ -1648,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/bottomup/" class="md-nav__link">
+      <a href="../api/inference/bottomup/" class="md-nav__link">
         
   
   
@@ -1671,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/identity/" class="md-nav__link">
+      <a href="../api/inference/identity/" class="md-nav__link">
         
   
   
@@ -1694,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/paf_grouping/" class="md-nav__link">
+      <a href="../api/inference/paf_grouping/" class="md-nav__link">
         
   
   
@@ -1717,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/peak_finding/" class="md-nav__link">
+      <a href="../api/inference/peak_finding/" class="md-nav__link">
         
   
   
@@ -1740,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/predictors/" class="md-nav__link">
+      <a href="../api/inference/predictors/" class="md-nav__link">
         
   
   
@@ -1763,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/single_instance/" class="md-nav__link">
+      <a href="../api/inference/single_instance/" class="md-nav__link">
         
   
   
@@ -1786,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/topdown/" class="md-nav__link">
+      <a href="../api/inference/topdown/" class="md-nav__link">
         
   
   
@@ -1809,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/inference/utils/" class="md-nav__link">
+      <a href="../api/inference/utils/" class="md-nav__link">
         
   
   
@@ -1840,7 +1807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/legacy_models/" class="md-nav__link">
+      <a href="../api/legacy_models/" class="md-nav__link">
         
   
   
@@ -1863,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/predict/" class="md-nav__link">
+      <a href="../api/predict/" class="md-nav__link">
         
   
   
@@ -1900,7 +1867,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/tracking/" class="md-nav__link ">
+            <a href="../api/tracking/" class="md-nav__link ">
               
   
   
@@ -1947,7 +1914,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/tracking/candidates/" class="md-nav__link ">
+            <a href="../api/tracking/candidates/" class="md-nav__link ">
               
   
   
@@ -1980,7 +1947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/tracking/candidates/fixed_window/" class="md-nav__link">
+      <a href="../api/tracking/candidates/fixed_window/" class="md-nav__link">
         
   
   
@@ -2003,7 +1970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/tracking/candidates/local_queues/" class="md-nav__link">
+      <a href="../api/tracking/candidates/local_queues/" class="md-nav__link">
         
   
   
@@ -2034,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/tracking/track_instance/" class="md-nav__link">
+      <a href="../api/tracking/track_instance/" class="md-nav__link">
         
   
   
@@ -2057,7 +2024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/tracking/tracker/" class="md-nav__link">
+      <a href="../api/tracking/tracker/" class="md-nav__link">
         
   
   
@@ -2080,7 +2047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/tracking/utils/" class="md-nav__link">
+      <a href="../api/tracking/utils/" class="md-nav__link">
         
   
   
@@ -2111,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/train/" class="md-nav__link">
+      <a href="../api/train/" class="md-nav__link">
         
   
   
@@ -2148,7 +2115,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/training/" class="md-nav__link ">
+            <a href="../api/training/" class="md-nav__link ">
               
   
   
@@ -2181,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/training/callbacks/" class="md-nav__link">
+      <a href="../api/training/callbacks/" class="md-nav__link">
         
   
   
@@ -2204,7 +2171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/training/lightning_modules/" class="md-nav__link">
+      <a href="../api/training/lightning_modules/" class="md-nav__link">
         
   
   
@@ -2227,7 +2194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/training/losses/" class="md-nav__link">
+      <a href="../api/training/losses/" class="md-nav__link">
         
   
   
@@ -2250,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/training/model_trainer/" class="md-nav__link">
+      <a href="../api/training/model_trainer/" class="md-nav__link">
         
   
   
@@ -2273,7 +2240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/training/utils/" class="md-nav__link">
+      <a href="../api/training/utils/" class="md-nav__link">
         
   
   
@@ -2327,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog.md" class="md-nav__link">
+      <a href="../changelog.md" class="md-nav__link">
         
   
   
@@ -2381,8 +2348,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2391,78 +2356,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#data-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ Features
+      Data Pipeline
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#model-system" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-set-up-your-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 1 : Set Up Your Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-train-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 2 : Train a Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-run-inference-on-the-trained-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step - 3 : Run Inference on the Trained Model
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Documentation Structure
+      Model System
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-help" class="md-nav__link">
+  <a href="#training-engine" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Help
+      Training Engine
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#inference-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Steps
+      Inference Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking System
     </span>
   </a>
   
@@ -2487,141 +2419,56 @@
   
 
 
-<h1 id="sleap-nn">SLEAP-NN<a class="headerlink" href="#sleap-nn" title="Permanent link">&para;</a></h1>
-<p><a href="https://github.com/talmolab/sleap-nn/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/talmolab/sleap-nn/actions/workflows/ci.yml/badge.svg" /></a>
-<a href="https://codecov.io/gh/talmolab/sleap-nn"><img alt="codecov" src="https://codecov.io/gh/talmolab/sleap-nn/branch/main/graph/badge.svg?token=Sj8kIFl3pi" /></a>
-<a href="https://github.com/talmolab/sleap-nn"><img alt="code" src="https://img.shields.io/github/stars/talmolab/sleap-nn" /></a>
-<a href="https://github.com/talmolab/sleap-nn/releases/"><img alt="Release" src="https://img.shields.io/github/v/release/talmolab/sleap-nn?label=Latest" /></a>
-<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/sleap-nn" />
-<a href="https://pypi.org/project/sleap-nn"><img alt="PyPI" src="https://img.shields.io/pypi/v/sleap-nn?label=PyPI" /></a></p>
-<p><strong>SLEAP-NN</strong> is the deep learning engine that powers <a href="https://sleap.ai">SLEAP</a> (Social LEAP Estimates Animal Poses), providing neural network architectures for multi-instance animal pose estimation and tracking. Built on PyTorch, SLEAP-NN offers an end-to-end training workflow, supporting multiple model types (Single Instance, Top-Down, Bottom-Up, Multi-Class), and seamless integration with SLEAP's GUI and command-line tools.</p>
-<h2 id="features">✨ Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+  <h1>Core Components</h1>
+
+<p>SLEAP-NN provides a modular, PyTorch-based architecture:</p>
+<h3 id="data-pipeline"><strong>Data Pipeline</strong><a class="headerlink" href="#data-pipeline" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>End-to-end workflow</strong>: Streamlined training and inference pipelines, including a multi-instance tracking worklow with a flow-shift-based tracker.</li>
-<li><strong>Multiple model architectures</strong>: Support for single-instance, top-down, and bottom-up pose estimation models using a variety of backbones, including highly-customizable UNet, ConvNeXt, and Swin Transformer.</li>
-<li><strong>PyTorch Lightning integration</strong>: Built on PyTorch Lightning for fast and scalable training, with support for multi-GPU and distributed training.</li>
-<li><strong>Flexible configuration</strong>: Hydra and OmegaConf based config system to validate training parameters and enable reproducible experiments.</li>
+<li>Efficient loading of data from SLEAP label files</li>
+<li>Parallelized data loading using PyTorch's multiprocessing for high throughput</li>
+<li>Caching (memory/ disk) to accelerate repeated data access and minimize I/O bottlenecks</li>
 </ul>
-<hr />
-<h2 id="quick-start">🚀 Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<p>Let's start SLEAPiNNg !!! 🐭🐭</p>
-<div class="admonition info">
-<p class="admonition-title">Prerequisite: uv installation</p>
-<p>Install <a href="https://github.com/astral-sh/uv"><code>uv</code></a>, a fast Python package manager for modern projects:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># macOS/Linux</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Windows</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>powershell<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</span>
-</span></code></pre></div></p>
-</div>
-<h3 id="step-1-set-up-your-configuration">Step - 1 : Set Up Your Configuration<a class="headerlink" href="#step-1-set-up-your-configuration" title="Permanent link">&para;</a></h3>
-<p>Create a <code>config.yaml</code> file for your experiment. Use a sample config from <a href="https://github.com/talmolab/sleap-nn/tree/main/docs/sample_configs"><code>docs/sample_configs</code></a>.</p>
-<h3 id="step-2-train-a-model">Step - 2 : Train a Model<a class="headerlink" href="#step-2-train-a-model" title="Permanent link">&para;</a></h3>
-<p>We use <code>uvx</code> here which automatically installs sleap-nn from PyPI with all dependencies and runs the command in a single step. <code>uvx</code> automatically installs sleap-nn and runs your command inside a temporary virtual environment (venv). This means each run is fully isolated and leaves no trace on your system—perfect for trying out sleap-nn without any permanent installation. Check out <a href="installation/">Installation docs</a> for different installation options. </p>
+<h3 id="model-system"><strong>Model System</strong><a class="headerlink" href="#model-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pluggable Design</strong>: Easy to add new backbones/ head modules</li>
+<li><strong>Backbone Networks</strong>: UNet, ConvNeXt, Swin Transformer  <ul>
+<li>See <a href="../models/#backbone-architectures">Backbone Architectures</a> for more details.</li>
+</ul>
+</li>
+<li><strong>Model Types</strong>: Single Instance, Top-Down, Bottom-Up, Multi-Class (Supervised ID models) variants</li>
+</ul>
 <blockquote>
-<p><strong>Quick Start Data:</strong> Download sample training data from <a href="https://storage.googleapis.com/sleap-data/datasets/BermanFlies/random_split1/train.pkg.slp">here</a> and validation data from <a href="https://storage.googleapis.com/sleap-data/datasets/BermanFlies/random_split1/val.pkg.slp">here</a> for quick experimentation.</p>
+<ul>
+<li>
+<p><strong>Single Instance</strong>: Direct pose prediction for single animals</p>
+</li>
+<li>
+<p><strong>Top-Down</strong>: Two-stage (centroid → centered-instance) for multi-animal scenarios</p>
+</li>
+<li>
+<p><strong>Bottom-Up</strong>: Simultaneous keypoint detection and association using Part Affinity Fields (PAFs).</p>
+</li>
+<li>
+<p><strong>Supervised ID or Multi-Class</strong>: Pose estimation + ID assignment for multi-instance scenarios</p>
+</li>
+</ul>
+<p>Detailed descriptions of all supported architectures are provided in the <a href="../models/">Model Types Guide</a>.</p>
 </blockquote>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows/Linux (CUDA)</label><label for="__tabbed_1_2">Windows/Linux (CPU)</label><label for="__tabbed_1_3">macOS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uvx<span class="w"> </span>--from<span class="w"> </span><span class="s2">&quot;sleap-nn[torch]&quot;</span><span class="w"> </span>--index-url<span class="w"> </span>https://pypi.org/simple<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cu128<span class="w"> </span>sleap-nn<span class="w"> </span>train<span class="w"> </span>--config-name<span class="w"> </span>config.yaml<span class="w"> </span>--config-dir<span class="w"> </span>/path/to/config_dir/<span class="w"> </span><span class="s2">&quot;data_config.train_labels_path=[train.pkg.slp]&quot;</span><span class="w"> </span><span class="s2">&quot;data_config.val_labels_path=[val.pkg.slp]&quot;</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uvx<span class="w"> </span>--from<span class="w"> </span><span class="s2">&quot;sleap-nn[torch]&quot;</span><span class="w"> </span>--index-url<span class="w"> </span>https://pypi.org/simple<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cpu<span class="w"> </span>sleap-nn<span class="w"> </span>train<span class="w"> </span>--config-name<span class="w"> </span>config.yaml<span class="w"> </span>--config-dir<span class="w"> </span>/path/to/config_dir/<span class="w"> </span><span class="s2">&quot;data_config.train_labels_path=[train.pkg.slp]&quot;</span><span class="w"> </span><span class="s2">&quot;data_config.val_labels_path=[val.pkg.slp]&quot;</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>uvx<span class="w"> </span>sleap-nn<span class="o">[</span>torch<span class="o">]</span><span class="w"> </span>train<span class="w"> </span>--config-name<span class="w"> </span>config.yaml<span class="w"> </span>--config-dir<span class="w"> </span>/path/to/config_dir/<span class="w"> </span><span class="s2">&quot;data_config.train_labels_path=[train.pkg.slp]&quot;</span><span class="w"> </span><span class="s2">&quot;data_config.val_labels_path=[val.pkg.slp]&quot;</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<h3 id="training-engine"><strong>Training Engine</strong><a class="headerlink" href="#training-engine" title="Permanent link">&para;</a></h3>
 <ul>
-<li>For more information on which CUDA version to use for your system, see the <a href="https://pytorch.org/get-started/locally/">PyTorch installation guide</a>.<br />
-  The <code>--extra-index-url</code> in the install command should match the CUDA version you need (e.g., <code>https://download.pytorch.org/whl/cuda118</code> for CUDA 11.8, <code>https://download.pytorch.org/whl/cuda128</code> for CUDA 12.8, etc.).</li>
-<li>On macOS, MPS (Metal Performance Shaders) is automatically enabled for Apple Silicon acceleration.</li>
+<li>PyTorch Lightning integration with custom callbacks</li>
+<li>In-built multi-GPU and distributed training support</li>
+<li>Experiment tracking with visualizers and WandB</li>
 </ul>
-</div>
-<h3 id="step-3-run-inference-on-the-trained-model">Step - 3 : Run Inference on the Trained Model<a class="headerlink" href="#step-3-run-inference-on-the-trained-model" title="Permanent link">&para;</a></h3>
-<p>To run inference:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows/Linux (CUDA)</label><label for="__tabbed_2_2">Windows/Linux (CPU)</label><label for="__tabbed_2_3">macOS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>uvx<span class="w"> </span>--from<span class="w"> </span><span class="s2">&quot;sleap-nn[torch]&quot;</span><span class="w"> </span>--index-url<span class="w"> </span>https://pypi.org/simple<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cu128<span class="w"> </span>sleap-nn<span class="w"> </span>track<span class="w"> </span>--data-path<span class="w"> </span>video.mp4<span class="w"> </span>--model-paths<span class="w"> </span>model_ckpt_dir/
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>uvx<span class="w"> </span>--from<span class="w"> </span><span class="s2">&quot;sleap-nn[torch]&quot;</span><span class="w"> </span>--index-url<span class="w"> </span>https://pypi.org/simple<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cpu<span class="w"> </span>sleap-nn<span class="w"> </span>track<span class="w"> </span>--data-path<span class="w"> </span>video.mp4<span class="w"> </span>--model-paths<span class="w"> </span>model_ckpt_dir/
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>uvx<span class="w"> </span>sleap-nn<span class="o">[</span>torch<span class="o">]</span><span class="w"> </span>track<span class="w"> </span>--data-path<span class="w"> </span>video.mp4<span class="w"> </span>--model-paths<span class="w"> </span>model_ckpt_dir/
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<h3 id="inference-pipeline"><strong>Inference Pipeline</strong><a class="headerlink" href="#inference-pipeline" title="Permanent link">&para;</a></h3>
 <ul>
-<li>For more information on which CUDA version to use for your system, see the <a href="https://pytorch.org/get-started/locally/">PyTorch installation guide</a>.<br />
-  The <code>--extra-index-url</code> in the install command should match the CUDA version you need (e.g., <code>https://download.pytorch.org/whl/cuda118</code> for CUDA 11.8, <code>https://download.pytorch.org/whl/cuda128</code> for CUDA 12.8, etc.).</li>
-<li>On macOS, MPS (Metal Performance Shaders) is automatically enabled for Apple Silicon acceleration.</li>
+<li>Optimized inference workflow for different model types</li>
+<li>Integration with SLEAP's labeling interface</li>
 </ul>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Model Paths</p>
-<p><code>--model-paths</code> should be set to <code>&lt;config.trainer_config.config_dir&gt;/&lt;config.trainer_config.run_name&gt;</code>. Make sure the model checkpoint directory contains both <code>best.ckpt</code> (or legacy sleap <code>best_model.h5</code> - only UNet backbone is supported) and <code>training_config.yaml</code> (or legacy sleap <code>training_config.json</code> - only UNet backbone is supported) files. The inference will fail without these files.</p>
-</div>
-<hr />
-<h2 id="documentation-structure">📚 Documentation Structure<a class="headerlink" href="#documentation-structure" title="Permanent link">&para;</a></h2>
+<h3 id="tracking-system"><strong>Tracking System</strong><a class="headerlink" href="#tracking-system" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="installation/">Installation Guide</a></strong> - Complete installation instructions with different options (CPU, GPU, development)</li>
-</ul>
-<h4 id="how-to-guides"><strong>How-to Guides</strong><a class="headerlink" href="#how-to-guides" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong><a href="config/">Configuration Guide</a></strong> - Detailed explanation of all configuration parameters and how to set up your config file for training</li>
-<li><strong><a href="training/">Training Guide</a></strong> - How to train models using the CLI or Python API and advanced training options</li>
-<li><strong><a href="inference/">Inference Guide</a></strong> - How to run inference and tracking with CLI/ APIs and evaluate the models</li>
-</ul>
-<h4 id="tutorials"><strong>Tutorials</strong><a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong><a href="example_notebooks/">Example Notebooks</a></strong> - Interactive marimo-based tutorial notebooks</li>
-<li><strong><a href="step_by_step_tutorial/">Step-by-Step tutorial</a></strong> - Comprehensive walkthrough of the entire workflow</li>
-</ul>
-<h4 id="additional-resources"><strong>Additional Resources</strong><a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong><a href="models/">Model Architectures</a></strong> — Explore supported model types, backbone networks, and architecture details.</li>
-<li><strong><a href="core_components/">Core Components</a></strong> — Main building blocks of the sleap-nn pipeline.</li>
-<li><strong><a href="api/">API Reference</a></strong> — Complete API documentation for all <code>sleap-nn</code> modules and functions.</li>
-</ul>
-<hr />
-<h2 id="get-help">Get Help<a class="headerlink" href="#get-help" title="Permanent link">&para;</a></h2>
-<p>If you encounter issues or have questions about SLEAP-NN:</p>
-<p><strong>Report Bugs</strong>:</p>
-<p>Found a bug? Please create an issue on GitHub:
-- <a href="https://github.com/talmolab/sleap-nn/issues/new">Create a new issue</a>
-- Include details about your environment, error messages, and steps to reproduce</p>
-<p><strong>Start a Discussion</strong>:</p>
-<p>Have questions about usage, feature requests, or want to share your experience?
-- <a href="https://github.com/talmolab/sleap-nn/discussions">Start a discussion</a></p>
-<p><strong>Additional Resources</strong>:</p>
-<ul>
-<li><a href="https://sleap.ai">SLEAP Documentation</a> - Main SLEAP documentation</li>
-<li><a href="https://github.com/talmolab/sleap-nn">SLEAP-NN GitHub Repository</a> - Source code and releases</li>
-<li><a href="https://github.com/talmolab/sleap/discussions">SLEAP Community</a> - General SLEAP discussions</li>
-</ul>
-<hr />
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="installation/">Installation Guide</a></li>
-<li><a href="config/">Configuration Guide</a></li>
-<li><a href="training/">Training Models</a></li>
-<li><a href="inference/">Running Inference / Tracking</a></li>
-<li><a href="api/">API Reference</a></li>
+<li>Multi-instance tracking across frames</li>
+<li>Flow-shift based tracker for robust tracking</li>
 </ul>
 
 
@@ -2704,10 +2551,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "toc.follow", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tooltips", "content.code.select", "content.footnote.tooltips"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "toc.follow", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tooltips", "content.code.select", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
