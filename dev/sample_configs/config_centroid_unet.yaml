@@ -2,6 +2,7 @@ data_config:
   train_labels_path: null
   val_labels_path: null
   validation_fraction: 0.1
+  use_same_data_for_val: false
   test_file_path: null
   provider: LabelsReader
   user_instances_only: true
@@ -48,7 +49,7 @@ data_config:
       mixup_lambda_min: 0.01
       mixup_lambda_max: 0.05
       mixup_p: 0.0
-  skeletons: []
+  skeletons:
 model_config:
   init_weights: default
   pretrained_backbone_weights: null
@@ -127,7 +128,7 @@ trainer_config:
     step_lr: null
     reduce_lr_on_plateau:
       threshold: 1.0e-08
-      threshold_mode: rel
+      threshold_mode: abs
       cooldown: 3
       patience: 5
       factor: 0.5
@@ -146,7 +147,9 @@ trainer_config:
     controller_port: 9000
     controller_polling_timeout: 10
     publish_port: 9001
+  eval:
+    enabled: true
+    frequency: 1
+    match_threshold: 50.0  # Max distance (px) for centroid matching
 name: ''
 description: ''
-sleap_nn_version: 0.0.1
-filename: ''
